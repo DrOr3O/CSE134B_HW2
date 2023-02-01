@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Lin CSE134 Bios page</title>
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Jeff Lin CSE134 Bio Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="./main.html">Home</a></li>
+            <li><a href="./hobby.html">Hobbies</a></li>
+            <li><a href="./experience.html">Experiences</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <main>
+        <canvas id="myCanvas" width="200" height="200">Your browser does not support the canvas tag.</canvas>
+        <script>
+            var c = document.getElementById("myCanvas");
+            var ctx = c.getContext("2d");
+
+            ctx.fillRect(20, 20, 100, 100);
+            ctx.clearRect(40, 40, 60, 60);
+            ctx.strokeRect(45, 45, 50, 50);
+        </script>
+
+
+        <h2>Here I am!</h2>
+        <img src="./pictures/selfie.png" alt="Picture of Me, Jeff">
+
+        <h3> Quote:</h3>
+        <code>"It`s always nice when Its nice"<br>-Keanu Reeve</code>
+
+        <h4> My Story:</h4>
+        <section>
+            <p>I have a really complicated and weird education path</p>
+            <aside>
+                <pre>"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
+demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
+pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty
+through weakness of will, which is the same as saying through shrinking from toil and pain. These cases
+are perfectly simple and easy to distinguish. In a free hour, when our power of choice is untrammelled
+and when nothing prevents our being able to do what we like best, every pleasure is to be welcomed and
+every pain avoided. But in certain circumstances and owing to the claims of duty or the obligations of
+business it will frequently occur that pleasures have to be repudiated and annoyances accepted. The wise
+man therefore always holds in these matters to this principle of selection: he rejects pleasures to
+secure other greater pleasures, or else he endures pains to avoid worse pains."</pre>
+            </aside>
+        </section>
+        <hr>
+        <h5>Check out this website I made</h5>
+
+    </main>
+
+</body>
+
+
+</html>
