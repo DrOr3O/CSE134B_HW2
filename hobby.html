@@ -38,6 +38,10 @@
     <main>
         <h2> <span style="color:blueviolet"> I Love Motorcycles!</span></h2>
         <table class="center">
+            <caption>Some of my favorite bikes</caption>
+            <colgroup>
+                <col span="1" style="background-color:rgb(131, 207, 212)">
+            </colgroup>
             <tr>
                 <th>&nbsp;</th>
                 <th><em>Kawasaki Ninja H2</em></th>
@@ -120,7 +124,7 @@
         <form>
             <fieldset>
                 <legend>What is your favorite bike from the above?</legend>
-                <label for="bike">Choose your bike from the list:</label>
+                <label for="bike">Choose your favorite bike from the list:</label>
                 <input list="bikes" name="bike" id="bike">
                 <datalist id="bikes">
                     <option value="Kawasaki Ninja H2">
@@ -131,8 +135,30 @@
                 <input type="submit">
             </fieldset>
         </form>
+        <br><br>
+        <form>
+            <label for="myBike">Guess my favorite:</label>
+            <select name="bike" id="myBikes">
+                <optgroup label="European Bike">
+                    <option value="BMW S1000RR">BMW S1000RR</option>
+                    <option value="KTM 1290 Super Duke R">KTM 1290 Super Duke R</option>
+                </optgroup>
+                <optgroup label="Japanese Bike">
+                    <option value="Kawasaki Ninja H2">Kawasaki Ninja H2</option>
+                </optgroup>
+                <optgroup label="American Bike">
+                    <option value="Indian FTR 1200">Indian FTR 1200</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
     </main>
 
+    <footer class="row">
+        <hr>
+        <a href="#">Back To Top</a>
+    </footer>
 
 </body>
 

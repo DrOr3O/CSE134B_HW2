@@ -8,8 +8,6 @@
     <title>Jeff Lin CSE134 Bios page</title>
 </head>
 
-
-
 <body>
     <header>
         <h1>Jeff Lin CSE134 Bio Page</h1>
@@ -33,10 +31,17 @@
             ctx.clearRect(40, 40, 60, 60);
             ctx.strokeRect(45, 45, 50, 50);
         </script>
-
+        <br>
+        <svg height="100">
+            <circle cx="50" cy="50" r="40" stroke="blue" stroke-width="4" fill="black" />
+            Sorry, your browser does not support inline SVG.
+        </svg>
 
         <h2>Here I am!</h2>
-        <img src="./pictures/selfie.png" alt="Picture of Me, Jeff">
+        <figure>
+            <img src="./pictures/selfie.png" alt="2019 Jeff Lin">
+            <figcaption>Fig: Me enjoying some conveyor belt sushi</figcaption>
+        </figure>
 
         <h3> Quote:</h3>
         <code>"It`s always nice when Its nice"<br>-Keanu Reeve</code>
@@ -58,9 +63,20 @@ secure other greater pleasures, or else he endures pains to avoid worse pains."<
             </aside>
         </section>
         <hr>
-        <h5>Check out this website I made</h5>
+        <h5>Listen to this chilling beats while browsing my bios</h5>
+        <audio controls>
+            <source src="./audios/Minecraft Music - Menu 1.mp3" type="audio/mpeg">
+        </audio>
+
+        <p>Why not click this button while you are at it?</p>
+        <button type="button" onclick="alert('Boo!')">Click this</button>
 
     </main>
+
+    <footer class="row">
+        <hr>
+        <a href="#">Back To Top</a>
+    </footer>
 
 </body>
 
